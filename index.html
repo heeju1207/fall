@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>가을</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900&display=swap&subset=korean" rel="stylesheet">
+
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body,h1,p{margin: 0;padding: 0;}
+		body{background: #6a3e1d;}
+		.wrap{margin : auto; text-align: center;}
+		.rain{width: 1px; height: 40px; background: #413028; position: absolute; animation: rr 0.6s forwards ease-in infinite;}
+		.s2{width: 1100px; height: 500px; padding-top: 100px; line-height: 1.7em; font-weight: 400;}
+		.headd{width: 600px; padding-top: 40px;}
+		.ppp{position: absolute; animation: lll 5s infinite alternate;}
+
+		@keyframes rr{
+			from{bottom: 100%;}
+			to{bottom: 0px;}
+		}
+
+		@keyframes lll{
+			from{left: 100%; width: 500px;}
+			to{left: 10px; width: 0;}
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+		<header>
+
+			<div class="wrap headd">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/lpka6ymCkIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+		</header>
+
+		<section class="s2 ppp" id="page">
+			<div class="wrap" id="gp" >
+				<p>떨어지는 낙엽까지도</p>
+				<p>멀어져 가는 저 새들도</p>
+				<p>스쳐 지나가는 흩어져 가는
+					<br>뒷모습까지도</p>
+				<p>	어제와 같은 하늘색인데<br>
+					언젠가 본 듯한 구름인데</p>
+				<p>	별 관심 없었던 사랑 노래<br>
+					오늘따라 귓가에 맴도네</p>
+				<p>	꽃이 지고 해가 저물면</p>
+				<p>	끝인 줄 알았지<br>
+					다시 더 아름다운 옷을 입고<br>
+					내게로 오네</p>
+				<p>	떨어지는 낙엽까지도</p>
+				<p>	멀어져 가는 저 새들도</p>
+				<p>	스쳐 지나가는 흩어져 가는<br>
+					뒷모습까지도</p>
+				<p>	금방이라도 울 것만 같은<br>
+					저 하늘도 훌훌 털어내고</p>
+				<p>	아프도록 시린 겨울날도</p>
+				<p>	실은 봄을 향해 달려가죠</p>
+				<p>	나는 너에게 또 너는 나에게<br>
+					오는 길이 그토록</p>
+				<p>	고되었던 이유가<br>
+					이렇게 큰 행복을 안고 오는<br>
+					길이었기 때문을 알고 난 후엔</p>
+				<p>	떨어지는 낙엽까지도</p>
+				<p>	멀어져 가는 저 새들도</p>
+				<p>	스쳐 지나가는 흩어져 가는<br>
+					뒷모습까지도</p>
+				<p>	아마도 우린</p>
+				<p>	아주 오래 그전부터<br>
+					약속돼있었던<br>
+					만남인 것 같죠</p>
+				<p>	사랑<br>
+					내게도 온 거죠</p>
+				<p>	떨어지는 낙엽까지도</p>
+				<p>	멀어져 가는 저 새들도</p>
+				<p>	스쳐 지나가는 흩어져 가는<br>
+					뒷모습까지도</p>
+			</div>
+
+		</section>
+
+		<section>
+			<div class="wrap rain" id="rrr">
+		</section>
+
+
+
+
+	<script type="text/javascript">
+		for(var i=0; i<40; i++){
+			var tt = rrr.cloneNode(true);
+			tt.id = i;	
+			tt.style.left = a(1200) + "px";
+			tt.style.animationDuration = Math.random() + "s";
+			tt.style.opacity = Math.random();
+			tt.style.height = Math.random()*300 + "px";
+			document.body.appendChild(tt);
+	}
+
+		for(var b=0; b<10; b++){
+		var ww = page.cloneNode(true);
+		ww.id = b;
+		ww.style.animationDuration = randomBH(5, 20)+"s";	
+		ww.style.width = Math.random()*700+"%";
+		ww.style.height = Math.random()*500+"px";	
+		ww.style.left =Math.random()* 100 + "%";
+		ww.style.top =Math.random()* 100 + "%";						
+		ww.style.opacity =Math.random()*1;		
+
+		document.body.appendChild(ww);
+	}
+
+		function a(num){
+		var cc = Math.random()*num;
+			return cc
+		}
+
+		function randomBH(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	</script>
+
+
+</body>
+</html>
